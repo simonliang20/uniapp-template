@@ -1,13 +1,14 @@
 {
   "name": "uni-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "commonjs",
   "scripts": {
-    "build-ci": "node ./scripts/build/index.cjs",
     "dev": "npm run dev:mp-weixin",
     "build:test": "npm run build:mp-weixin-test",
     "build:staging": "npm run build:mp-weixin-staging",
     "build:production": "npm run build:mp-weixin-production",
+    "build-ci": "node ./scripts/build/index.cjs",
+    "release": "release-it",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
@@ -89,6 +90,7 @@
     "husky": "^8.0.3",
     "lint-staged": ">=10",
     "prettier": "2.8.8",
+    "release-it": "^15.10.1",
     "typescript": "*",
     "vite": "4.0.4",
     "vue-tsc": "^1.0.24"
