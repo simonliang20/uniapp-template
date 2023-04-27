@@ -1,6 +1,6 @@
 {
   "name": "uni-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "commonjs",
   "scripts": {
     "dev": "npm run dev:mp-weixin",
