@@ -26,7 +26,9 @@ if [ $? -eq 0 ]; then
   npm run build:$PACKAGE_NAME-$TARGET_BRANCH
 
   if [ $? -eq 0 ]; then
-    zip -r $PACKAGE_NAME.zip ./dist/build/$PACKAGE_NAME
+    cd ./dist/build
+    zip -r ../../$PACKAGE_NAME.zip $PACKAGE_NAME
+    cd ../../
 
     if [ $? -eq 0 ]; then
 
