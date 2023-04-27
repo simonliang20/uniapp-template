@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
+    "build-ci": "node ./scripts/build/index.cjs",
     "dev": "npm run dev:mp-weixin",
     "build:test": "npm run build:mp-weixin-test",
     "build:staging": "npm run build:mp-weixin-staging",
