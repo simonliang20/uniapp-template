@@ -5,5 +5,5 @@ exports.packageName = "mp-weixin";
 exports.targetEnvironment = {
   test: "test",
   staging: "staging",
-  release: "release",
+  production: "production",
 };

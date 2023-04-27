@@ -23,7 +23,7 @@ git branch -D $TARGET_BRANCH
 git checkout -b $TARGET_BRANCH
 
 if [ $? -eq 0 ]; then
-  npm run build:$PACKAGE_NAME
+  npm run build:$PACKAGE_NAME-$TARGET_BRANCH
 
   if [ $? -eq 0 ]; then
     zip -r $PACKAGE_NAME.zip ./dist/build/$PACKAGE_NAME
@@ -31,7 +31,7 @@ if [ $? -eq 0 ]; then
     if [ $? -eq 0 ]; then
 
       git add $PACKAGE_NAME.zip
-      git commit -m"build: $DATETIME"
+      git commit -m "build: $DATETIME"
       git push --set-upstream origin $TARGET_BRANCH -f
 
       if [ $? -eq 0 ]; then
