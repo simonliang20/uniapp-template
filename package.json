@@ -1,7 +1,10 @@
 {
-  "name": "uni-preset-vue",
+  "name": "uni-template",
   "version": "0.0.0",
+  "type": "commonjs",
   "scripts": {
+    "dev": "npm dev:mp-weixi",
+    "build": "node ./scripts/build/index.cjs",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
@@ -54,6 +57,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3070720230316001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3070720230316001",
     "editorconfig": "^1.0.2",
+    "inquirer": "^8.0.0",
     "miniprogram-ci": "^1.9.5",
     "vue": "^3.2.45",
     "vue-i18n": "^9.1.9"
